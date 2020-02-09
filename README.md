@@ -1,3 +1,4 @@
 # hulyacandar.github.io
 
-![](deneme/img/foto.png)
+
+<img src= "deneme/img/foto.jpg">
