@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="veri.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Patrick+Hand&display=swap" rel="stylesheet">
+    <title>Hulya Blog</title>
+</head>
+<body>
+    
+<div class="header">
+    <h2 class="logo"> Hülya Candar</h2>
+    <input type="checkbox" id="ccc">
+    <label for="ccc" class="show-menu-btn"> 
+       <img src= "ikonlar/bars5.png">
+    </label>
+
+    <ul class="menu">
+        <a href="index.html"><b>Ana Sayfa</b></a>
+        <a href="veritabani.html"><b>Veri Tabanı</b></a>
+        <div class="erisim">
+            <a href="#"><b>Veri Madenciliği</b></a>
+              <a href="#"> <b>C# </b></a>
+            </div>
+    
+
+    <label for="ccc" class="hide-menu-btn"> 
+        <img src= "ikonlar/eksi4.png">
+     </label>
+    </ul>
+   
+</div>
+
+<div class="sidebar">
+  
+    <ul class="veritabanii">
+        <li><a href="#geridön"><b>İlişkisel Veri Tabanı</b></a> </li>
+        <li><a href="#geridön1"><b>Stored Prosedure</b></a> </li>
+        <li><a href="#geridön2"><b>Trigger</b></a> </li>
+        <li><a href="#geridön3"><b>İlişkisel Olmayan Veri Tabanı</b></a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <br>
+
+    <h1> Veri Tabanları</h1><br>
+    <div class="center">
+
+        <img src="img/foto3.jpg">
+    </div>
+<p>
+
+    <br>
+    Veri tabanları bilgilerimizi kullanım amacına uygun şekillerde,
+     fiziksel olarak saklayabilen araçlardır.</p> <br>
+    <br>
+    <p><b> Veri Tabanı Yönetim Sistemi</b></p> <br>
+    <p>
+        Veri tabanı
+        Yönetim Sistemleri, verilerin fiziksel hafızadaki
+        durumlarını, kullanıcıların erişimlerini düzenleyen
+        sistemlerdir. </p>
+        <br>
+        <p>
+        VTYS, yeni bir veri tabanı oluşturmak, veri tabanını
+        düzenlemek, geliştirmek ve bakımını yapmak gibi çeşitli
+        karmaşık işlemlerin gerçekleştirildiği birden fazla
+        programdan oluşmuş bir yazılım sistemidir.
+        </p>
+        <br>
+        <p>
+        VTYS’ler fiziksel hafızayı ve veri tiplerini kullanıcılar
+        adına şekillendirip denetleyerek kullanıcılarına
+        standart bir SQL arayüzü sağlar ve onların dosya
+        yapıları, veri yapısı, fiziksel hafıza gibi sorunlarla
+        ilgilenmek yerine veri giriş-çıkışı için uygun arayüzler
+        geliştirmelerine olanak sağlarlar.</p>
+        <br>
+
+        
+   <br><a name="geridön" href="veritabani.html"><p>
+   <b>İlişkisel Veri Tabanı</b></p></a> <br>
+    <p>
+    İlişkisel veritabanları; stokları takip etmek, e-ticaret işlemlerini 
+    işlemek, çok miktarda önemli müşteri bilgilerini yönetmek
+     ve çok daha fazlasını yapmak
+     için kullanılmaktadır. 
+    Bu işlerin üstesinde de gayet basit bir kullanımla gelebilmektedir.</p><br>
+   <p>Bu veritabanlarında mantık iki farklı veri tablosunu ilişkilendirmek
+        için aralarına bir 
+       anahtar değer ataması yapmaktan geçer. ilk tablomuzda atadığımız
+        anahtarı  SQL'de "database diagrams" seçeneğiyle diğer tabloya 
+        bağlarız. Artık iki tablo arasındaki bilgileri 
+        güvenle kullanabilirsiniz.</p>   <br>
+        <div class="diagram">
+            <img src="img/diyagram_sehir.png"></div>
+            <br>
+
+    
+            <a name="geridön1" href="veritabani.html"> <p><b> Stored Procedure</b></p> </a>  <br>
+
+        <p>
+        Veri erişimi, birçok tekrarlı işlemi içerir. Örneğin,
+         istenen sonucu elde etmek için bir veri tablosundan bilgi
+          almaya yönelik basit bir sorgunun yüzlerce kez tekrarlanması
+           gerekebilir. İşlemlerin verimliliğini düşüren bu durumlara 
+           çözüm ise Stored Prosedure diyebiliriz.</p><br>
+        
+           <p>
+        Store Procedure,
+         programlamada kullanılan ifadelere göre kod yazmamızı sağlar. 
+         Böylece her seferinde aynı işlemleri yapma gereksinimi duymadan
+          zamandan tasarruf etmiş oluruz.
+        </p><br> <p>
+          Store Procedure, giriş parametreleri alarak, çağrıldığında 
+        çıktı değeri döndürür.
+        Veritabanında işlemler gerçekleştirebileceğimiz BEGIN…END, 
+        IF ELSE, WHILE, BREAK, CONTINUE, CASE gibi ifadeler
+         ile kullanılabilir.
+        </p><br> <p>
+        Türkçesi Saklı Yordam'a denk gelmektedir. 
+        Bir Saklı Yordam içinde başka Saklı Yordam’lar çağırılıp çalıştırılabilir.
+         Veritabanlarında saklandığından dolayı daha hızlı çalışırlar.
+         Saklı Yordam’lar sadece ilk çalıştıklarında derlenirler ,tekrar 
+         çalıştıklarında derlenmezler ve bu da Saklı Yordam'ları verimli kılar. 
+        </p><br>
+       
+        
+        <p><b>Saklı Yordam Oluşturma (CREATE Store Procedure)</b></p>  <br>
+       
+           <img src="img/sql_yy1.png">
+
+           <p> MsSQL Server ortamında en basit haliyle Saklı Yordam oluşturmak. Oluşturduğumuz saklı 
+               yordamı çalıştırmak için ise aşağıdaki 
+        ifadeyi kullanırız.</p>  <br>
+        
+
+    </p>  <br>
+        <img src="img/sql_yyex.png"><br>
+
+        <p><b>Saklı Yordam Güncelleme (ALTER Store Procedure)</b></p>  <br>
+  
+               <p>Önceden oluşturmuş olduğumuz Saklı Yordam üzerinde 
+             değişiklik yapmak istediğimizde ALTER ifadesini kullanırız.
+             Oluştururken uyulan adımların benzerleri geçerlidir. Değiştirmek istediğimiz
+             parametreyi belirttikten sonra temel fark ise
+             Create Procedure yerine Alter Procedure yazılmasıdır. 
+               </p>
+               <br><br>
+               <img src="img/sql_alt.png"><br>
+
+
+        <p><b>Saklı Yordam Silme (DROP Store Procedure)</b></p>  <br>
+
+      <p>  Saklı Yordamın silinmesi işlemi Drop Procedure ifadesinden sonra 
+        silinmek istenen Saklı Yordamın isminin yazılmasıyla olur. Daha sonra 
+        sorgu execute edilir ve işlem gerçekleşir.</p>
+      
+        
+        <br><br>
+
+        <a name="geridön2" href="veritabani.html">  <p><b> Triggers</b></p></a> <br>
+
+     <p>  Türkçesi Tetikleyiciye denk gelen Triggerlar Saklı Yordamların özel bir türüdür. Tetikleyiciler genellikle veri bütünlüğünü ve güvenliğini sağlamak için kullanılır. <br>
+        
+        Tetikleyicileri Saklı Yordam'lardan ayıran en önemli özellik Saklı Yordam'ları elle çalıştırmamızın gerekmesidir. <br>Tetikleyiciler ise bir tablo üzerinde bir işlem gerçekleştiği zaman (insert, update, delete) başka bir işlem daha buna bağlı olarak kendiliğinden gerçekleşsin istendiğinde bunu realiteye çeviren kodlar bütünüdür.
+    </p> 
+    <p>Bir trigger oluşturmak için aşağıdaki resimde gösterildiği gibi genel yapı kullanılır. </p>
+    <img src="img/sql_trg.png"><br>
+
+    <p>
+        Triggerları bir örnekle açıklayalım. Bunun için önce 
+            ürün, sepet ve satış tabloları içeren küçük bir veri tabanı yapalım.   
+           </p><br>
+           <img src="img/sql_trggg.png"><br>
+           <p> Daha sonra ise üç tabloyu birbirleriyle ilişkilendirmek için 
+            iki tane foreign key ekleriz.</p><br>
+            <img src="img/sql_trg13.png"><br>
+            <p>Yaptığımız işlemleri net olarak görebilmek içinse üç tabloya veri girişi
+            yapmamız gerek.</p> <br>
+            <img src="img/sql_trge2.png"><br>
+           <br>
+           <p>Veri tabanına trigger eklemek için eklemek istenilen tablonun altındaki
+               trigger klasörüne gelip farede sağa tıklayınca açılan penceredeki "add trigger"
+               seçeneğine basılır. Bu bize trigger için tasarımı hazır bir query sayfası verir.
+           </p> <br>
+           <img src="img/sql_trg01.png">
+       
+       <br>
+   
+       <p> İlk triggerla sepete eklediğimiz ürünlerin ürün tablosundan eksilmesini
+           sağlayalım. Bunun için önce bize kodlarda yardımcı olması için  @urun_id ve @miktar isimli iki değişken tanımlarız.
+
+       </p> <br>
+        <img src="img/trigger.png"><br>
+        <p> "after insert as" ve " from inserted" arasındaki kodlarla sepet tablosuna sütun adları belirtilen değişkenleri ekleriz. "update set" ile de ikinci bir tabloya ikinci işlemi tanımlarız.
+        </p> 
+        <br>
+        <img src="img/sql_trg5.png"><br>
+        <p>  Yukarıda sepete eklenen ürünlerin ürün tablosundan eksildiğini görebiliriz. Yani işlemler buraya kadar doğru. Peki o zaman 
+            ikinci bir trigger daha yapalım. Bu da sepetle iş bittikten sonra o sepeti silip verileri satışa aktaran bir trigger olsun.
+        </p><br>
+        <img src="img/ttrg6.png"><br>
+        <p> Bu triggerda sepet tablosundaki bütün sütunlar değişkenlere aktarılır. "after delete as" ve "from deleted" arasındaki kodlarla
+            değişkenleri sütun adlarına eşitleriz ve silindikten sonrası için hafızaya alırız. "insert into" ile de hafızadaki veriler
+        satış tablosuna aktarılır.<br> Triggerı kontrol edelim. </p><br>
+        <img src="img/byebyetrg.png"><br> <p> Eklediğimiz üç satırdan idsi 2 olan ürün önce sepete eklenmiş daha sonra da silinmiştir. En temel
+            sql kodu olan select*from ile satış tablosundaki verileri görmüş oluyoruz. İkinci trigger da doğru çalışıyor. </p>
+
+
+
+
+
+<br>
+<br>
+<a name="geridön3" href="veritabani.html">  <p><b> İlişkisel Olmayan Veri Tabanı</b></p></a> <br>
+
+<p>İlişkisel olmayan veri tabanları namıdiğer "NoSQL".
+    Bu tür veritabanları, özellikle büyük veri hacmi, düşük gecikme süresi ve esnek veri modelleri gerektiren uygulamalar için optimize edilmiştir. Bu gereksinimler, diğer veritabanlarının veri tutarlılığı kısıtlamalarının bir kısmı esnetilerek karşılanır.  <br>Bir NoSQL veritabanında, her tablo genellikle bir JSON belgesi olarak saklanır.
+    <br> İlişkisel veritabanlarında tasarımdaki bir değişiklik, 
+    herşeyi yeniden tasarlamaya neden olmakta. NoSQL veri tabanlarının yapısı çok daha basit ve esnek.  <br>
+    Dolayısıyla yapılacak değişiklikler herşeyi ya etkilemiyor ya az etkiliyor.</p> <br>
+    <br>
+    <p><b>  SQL ve NoSQL Terminolojisinin Karşılaştırması </b></p>     <br>
+    <img src="img/sql_nosql.png"><br>
+
+
+<br>
+<br>
+
+<div class="ikon">
+    <img src="ikonlar/r2d2.png">
+ </div>
+<br><br>
+ </p>
+</div>
+
+
+</body>
+</html>
