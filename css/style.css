@@ -212,10 +212,10 @@ h2{
     color: midnightblue;
     }
     .content .center img{
-        width: 40%;
-        max-width: 600px;
+     width: 75%;
+        max-width: 800px;
         margin-top: 18px;
-        margin-left: 30%; 
+        margin-left: 15%; 
     }
     .ikon{
       width: 10px;
